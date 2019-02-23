@@ -1,14 +1,26 @@
-var randomLetter= "k";
+var randomLetter= generateLetter();
 var wins=0;
 var losses=0;
 var guessLeft = 10;
 var yourGuesses = [];
 
+
+function generateLetter() {
+    var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var letter = letters[Math.floor(Math.random() * letters.length)];
+    return letter
+}
+
+
+
+
+
 function resetGame (){
 
     guessLeft = 10;
     yourGuesses = [];
-    randomLetter = "M";
+    randomLetter = generateLetter();
+    
 }
 
 
@@ -40,22 +52,16 @@ document.onkeyup = function(input) {
           
         else {
             losses += 1;
-            //randomLetter generate
             resetGame();
         } 
 
 
     }
 
-
-
-    console.log("userKey: "+userKey );
-    console.log("wins:"+ wins);
-    console.log("losses:" + losses);
-    console.log("guessLeft: " + guessLeft);
-    console.log("randomletter: " + randomLetter);
-    console.log("yourguesses: " + yourGuesses);
-
+    document.getElementById("yourGuesses").innerHTML = yourGuesses
+    document.getElementById("wins").innerHTML = wins
+    document.getElementById("losses").innerHTML = losses
+    document.getElementById("guessesLeft").innerHTML = guessLeft
 
 }
 
