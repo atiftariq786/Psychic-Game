@@ -1,0 +1,28 @@
+html{
+    background: grey;
+    color:white;
+    size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    color:yellow;
+
+}
+
+#wins {
+    color:greenyellow;
+      font-size: 20px;
+      
+}
+
+#losses {
+    color:red;
+      font-size: 20px;
+      
+}
+#yourGuesses{
+    color: yellow;
+      font-size: 20px;
+      
+}
