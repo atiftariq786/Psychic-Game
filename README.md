@@ -12,7 +12,7 @@
 ## The Psychic Image View
 
 
-![alt text](https://github.com "Basic Portfolio_Portfolio")
+![alt text](https://github.com/atiftariq786/Psychic-Game/blob/master/assets/images/Psychic%20Game.png?raw=true "Basic Portfolio_Portfolio")
 
 ## Getting Started
 
